@@ -1,0 +1,197 @@
+<!-- ABSOLUTE POSITION EXAMPLE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            background-color: lightgray;
+            height: 50vh;
+            width: 20vw;
+            position: relative;
+            box-shadow: -2px 2px 2px 2px gray;
+        }
+        .heading{
+            background-color: black;
+            height: 15%;
+            width: 17vw;
+            left: 1.5vw;
+            position: absolute;
+            color: white;
+            top: 2rem;
+            text-align: center;
+            padding: 10px;
+        }
+        .content{
+            background-color: black;
+            height: 35%;
+            width: 17vw;
+            position: absolute;
+            color: white;
+            top: 13rem;
+            left: 1.5vw;
+            padding: 10px;
+            text-align: center;
+        }
+        .price{
+            background-color: black;
+            height:2rem;
+            width: 4rem;
+            color:white;
+            position: absolute;
+            text-align: center;
+            padding: 8px;
+            left:90%;
+            top:-5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading"> Heading</div>
+        <div class="content">This is the content of the heading</div>
+        <div class="price">Price</div>
+    </div>
+</body>
+</html> -->
+
+
+<!-- FIXED POSITION EXAMPLE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .body{
+            margin: 0;
+        }
+        .container{
+            height: 18rem;
+            width: 18rem;
+            border: 1px solid;
+            position: fixed;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+        }
+        .box1{
+            background-color: aqua;
+            height: 8rem;
+            width: 8rem;
+        }
+        .box2{
+            background-color: blue;
+            height: 8rem;
+            width: 8rem;
+            position: fixed;
+            top:5rem;
+            left: 5rem;
+        }
+        .box3{
+            background-color: blueviolet;
+            height: 8rem;
+            width: 8rem;
+            position: fixed;
+            top:10rem;
+            left: 10rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html> -->
+
+
+<!-- RELATIVE POSITION EXAMPLE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            margin:0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle1{
+            background-color: yellow;
+            border-radius: 50%;
+            height: 10%;
+            width:5%;
+        }
+        .circle2{
+            background-color: orange;
+            border-radius: 50%;
+            height: 10%;
+            width: 5%;
+            position: relative;
+            right: 30px;
+        }
+        .circle3{
+            background-color: red;
+            border-radius: 50%;
+            height: 10%;
+            width:5%;
+            position: relative;
+            right: 60px;
+        }
+        .circle4{
+            background-color: brown;
+            border-radius: 50%;
+            height: 10%;
+            width:5%;
+            position: relative;
+            right: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4">+1</div>
+    </div>
+</body>
+</html> -->
+
